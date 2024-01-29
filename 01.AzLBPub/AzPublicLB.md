@@ -1,3 +1,6 @@
+---------------------------
+Azure Public Load Balancer 
+---------------------------
 az group create --name CreatePubLBQS-rg --location eastus
 
 az network vnet create --resource-group CreatePubLBQS-rg --location eastus --name myVNet --address-prefixes 10.1.0.0/16 --subnet-name myBackendSubnet --subnet-prefixes 10.1.0.0/24
@@ -51,7 +54,7 @@ do
 done
 
 az network public-ip show --resource-group CreatePubLBQS-rg --name myPublicIP --query ipAddress --output tsv
------------------------------
+
 az group delete --name CreatePubLBQS-rg
 
 
