@@ -200,7 +200,9 @@ Project Steps:
         myVM2
     
 10) Delete All Resources in Resource Group
-    # az group delete --name CreatePubLBQS-rg
+    ``` bash
+    az group delete --name CreatePubLBQS-rg
+    ```
 
 
 
